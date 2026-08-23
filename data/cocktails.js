@@ -1,5 +1,5 @@
 const cocktails = [
-
+ 
     {
         category: "CLASSIC",
 
