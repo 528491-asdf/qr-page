@@ -80,22 +80,36 @@
         /* Cocktail card */
         .cocktail-card {
             display: block;
-
-            padding: 22px 20px;
+            padding: 0;
             margin-bottom: 14px;
-
+        
             border: 1px solid #333;
             border-radius: 8px;
-
+        
             color: inherit;
             text-decoration: none;
-
+        
             background: #181818;
-
+        
+            overflow: hidden;
+        
             transition:
                 background 0.2s,
                 border-color 0.2s,
                 transform 0.2s;
+        }
+        
+        .cocktail-image {
+            display: block;
+        
+            width: 100%;
+            height: 180px;
+        
+            object-fit: cover;
+        }
+        
+        .cocktail-info {
+            padding: 20px;
         }
 
         .cocktail-card:hover {
@@ -159,12 +173,22 @@
             </div>
 
             <a class="cocktail-card" href="cocktails/negroni.html">
-                <h2 class="cocktail-name">NEGRONI</h2>
-                <div class="cocktail-korean">네그로니</div>
 
-                <div class="ingredients">
-                    Gin · Campari · Sweet Vermouth
+                <img
+                    class="cocktail-image"
+                    src="/qr-page/brunoG.png"
+                    alt="Negroni"
+                >
+            
+                <div class="cocktail-info">
+                    <h2 class="cocktail-name">NEGRONI</h2>
+                    <div class="cocktail-korean">네그로니</div>
+            
+                    <div class="ingredients">
+                        Gin · Campari · Sweet Vermouth
+                    </div>
                 </div>
+            
             </a>
 
             <a class="cocktail-card" href="cocktails/old-fashioned.html">
